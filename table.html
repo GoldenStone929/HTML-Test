@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+    //Document type ⬆️
+    //⬇️并非必须的 但是加分
+    <html lang="zh-Hans"
+<html>
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta name= "viewport" content = "width = device-width, initial-scale=1" /> 
+        <title> 表格: Table </title>
+
+        <h2>定义图表的边框以及颜色</h2>
+        <style>
+            table, th, 
+            td{
+                border-collapse: collapse;
+                border: 1px solid blue;
+            }
+            th, td {
+                padding: 0.5rem;
+            }
+
+
+
+        </style>
+    </head>
+
+
+
+    <body>
+        <h2>表格</h2>
+        <table>
+            <h5>thead = 这个表格的head在哪里
+                tbody = 这个表格的body部分
+                没有任何实质上的作用以及改变，但是更易于理解
+                tfoot等于是表格的一个总结，例如 sum = ...?
+            </h5>
+            <thead>
+                <tr>
+                    <th colspan="4">
+                        My favorite songs
+                    </th>
+                </tr>
+    
+                <tr>
+                    <th>歌手</th>
+                    <th>年份</th>
+                    <th>名称</th>
+                </tr>
+            </thead>
+
+
+            <tbody>
+            <h6>th/td + colspan 可以延长向后推进，类似于表格大标题的制作方法</h6>
+            <h6>colspan = column span(扩展)</h6>
+
+            <tr>
+                <th>Kendrick Lamar</th>
+                <th>Love.</th>
+                <th>2017</th>
+                <th>something</th>
+            </tr>
+
+            <tr>
+                <th>Kendrick Lamar</th>
+                <th>humble.</th>
+                <th>2017</th>
+            </tr>
+
+            <tr>
+                <th>Kendrick Lamar</th>
+                <th>Element.</th>
+                <th>2017</th>
+            </tr>
+
+            <tr>
+                <th>J Cole</th>
+                <th>No Role Models</th>
+                <th>2014</th>
+            </tr>
+            </tbody>
+
+        </table>
+    </body>
+
+
+
+
+
+</html>

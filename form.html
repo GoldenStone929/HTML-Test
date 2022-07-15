@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>第一个form制作</title>
+  </head>
+
+  <body>
+    <h6>
+      目前还没有学网页后端，所以action=“”里面先空置着
+      action空置的时候，输入和button都不会有反应
+    </h6>
+    <h6>action=""预设是get</h6>
+    <h6>cool feature: label for="name input id="name</h6>
+
+
+    <!--action="" method="get or post" get :
+      预设：无论在框里面打什么，都会显示在URL上 post:
+      post则会隐藏，比如你的密码，你就不会希望显示在网页上
+      区别：数据是否出现在URL上-->
+
+    <form action="" method="GET">
+      <label for="Myname">姓名: </label>
+      <input
+        id="Myname"
+        type="text"
+        name="inputName"
+        value="please enter your name"
+      />
+      <br />
+
+      <label for="MyPhone"> 电话 </label>
+      <input
+        id="MyPhone"
+        type="text"
+        name="telephone"
+        value="please enter your phone number"
+      />
+      <br />
+
+      <label for="email"> 电子邮箱地址 </label>
+      <input id="email" type="email" name="" value="please enter your email" />
+      <br />
+
+      <input
+        type="checkbox"
+        id="checkbox"
+        name="SOEMTING"
+        value="whatever you want it to be"
+        checked
+      />
+      <br />
+
+      <label for="files">文件</label>
+      <input id="files" 
+      type="file" 
+      name="file name" />
+      <br />
+
+
+        <label for="Age"> 年龄 </label>
+        <input id="Age" 
+        type="number" 
+        name="Age"    
+        value="21"  
+        min="0" 
+        max="100"
+        step="0.5"
+        required
+        ><br>
+
+        <>
+        <h6>问题是可以全部勾选，所以用 "Radio"</h6>
+        <label for="Gender">性别</label>
+        <input id="male" type="checkbox" name="gender" value="male">
+        <label for="male">male</label>
+        <input id="female" type="checkbox" name="gendar" value="female">
+        <label for="female">female</label>
+         <br    />
+
+
+        <br/>
+        <h6>在判断某些radio选一的时候，name必须一样</h6>
+        <label for="Gender">性别</label>
+        <input id="male" 
+        type="radio" 
+        name="gender" 
+        value="male"    
+        required>
+
+        <label for="male">男性</label>
+        <input id="female" type="radio" name="gender" value="female"    required>
+        <label for="female">女性</label>
+        <br/>
+
+
+      <p>
+        <h6>在结尾加一个checked，就会自动勾选</h6>
+        <h6>value 如果是空的，那么勾选之后不会传输给后端任何东西</h6>
+        <h6>有设定name属性的input才会被标出去</h6>
+        <h6>有name的标签，value才会传送到后端去</h6>
+      </p>
+      <label for="checkbox">我已阅读并同意条款</label>
+      <button type="submit">submit</button>
+      <br>
+      
+      <label for="range">问卷满意程度</label>
+      0<input id="range" type="range"   
+      name=""   
+      value="" 
+      max="1000"  
+      min="0" 
+      step="100">1000
+      <br>
+      
+    </form><br>
+    
+    hidden information as shown below
+    ------------------------------
+    <br>
+
+    <br />
+
+    <form action="" method="POST">
+      <label for="Myname">账号: </label>
+      <input id="Myname" type="text" name="inputName" />
+      <br />
+
+      <label for="MyPhone"> 密码 </label>
+      <input id="MyPhone" 
+      type="password" 
+      name="telephone"
+      maxlength="16"
+      minlength="8"
+      value=""
+      required
+      />
+      <br />
+
+      
+
+      <button type="submit">submit</button>
+    </form>
+
+    <h4>website for more input option</h4>
+    <a
+      target="_blank"
+      href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input"
+    >
+      input设计与添加
+    </a>
+  </body>
+</html>

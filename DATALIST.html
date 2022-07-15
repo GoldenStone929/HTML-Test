@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <label for="gender">性别</label>
+    <select name="gender" id="gender" required>
+      <option></option>
+      <option value="male">男人</option>
+      <option value="female">女人</option>
+      <option value="other">其他</option>
+    </select>
+    <!--value里面记得要写，不然不会update-->
+
+    <!--dataList-->
+    <br />
+    <label for="area">地区</label>
+
+    <input list="areaList" type="text" name="area" id="area" />
+
+    <datalist id="areaList">
+      <option value="China">中国</option>
+      <option value="USA">美国</option>
+      <option value="India">印度</option>
+      <option value="Japan">日本</option>
+      <option value="Korea">韩国</option>
+      <option value="Thailand">泰国</option>
+    </datalist>
+
+    <!--option之间的字是对于用户的一个注释，不会传入后端-->
+
+    <br />
+    <!--TextArea范例-->
+    <label for="">给网站的建议</label>
+    <br />
+    <textarea
+      name="suggestion"
+      id="suggestion"
+      cols="30"
+      rows="10"
+      placeholder="THANKS FOR THE SUGGESTION"
+    ></textarea>
+
+    <br />
+
+    <!--尝试用 div，把inLine element变成block element-->
+    <div>
+      <a href="https://www.google.cn">Google</a>
+    </div>
+
+    <div>
+      <a href="https://www.apple.com">Apple</a>
+    </div>
+    <!--without Div-->
+    <a href="https://www.apple.com">apple</a>
+    <a href="https://www.google.cn">Google</a>
+
+    <!--hr标签 水平标签，可以加入一个水平线-->
+
+    <h6>something</h6>
+    <hr />
+    <h6>something</h6>
+    <hr />
+    <h6>something</h6>
+    <br>
+
+      <!--特殊符号-->
+      <h1>&#10016</h1>
+      <hr>
+      <h1>&#10084 I love you too</h1>
+      <hr>
+      <h1>&#9819</h1>
+
+
+        <!--index.html
+          是最重要的文档，类似于（首页）
+          
+        -->
+
+
+  </body>
+</html>
