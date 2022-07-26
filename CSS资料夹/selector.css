@@ -1,0 +1,31 @@
+/* universal selector 
+    *代表了所有的标签，任何的属性设点会套用到所有的标签上 */
+
+* {
+  color: green;
+}
+
+/* element selector 
+标签选取，比如选取所有的h1，所有的p，等等*/
+h1 {
+  color: rgb(100, 88, 99);
+}
+
+/* id selector 
+    是唯一的,select only the element with the specified id  */
+#redColor {
+  color: red;
+}
+
+/* class selector */
+.blueColor {
+  color: blue;
+}
+
+/* 选取同时符合多个class的标签 */
+h1.blueText {
+  /* 类别是同时符合h1和blueText的标签 */
+  font-size: 2rem;
+}
+
+/* grouping selector */

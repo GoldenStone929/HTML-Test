@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+
+
+        h1 {
+            /* property name, duration, timing */
+            /* transition: background-color 3s ; */
+            transition: all 3s ease-in;
+            
+        }
+
+        h1:hover {
+            background-color: violet;
+            cursor: pointer;
+        }
+
+
+        div.container {
+            width: 60%;
+            height: 800px;
+            background-color: black;
+            position: relative;
+        }
+
+        div.box1 {
+            width: 30%;
+            height: 30%;
+            background-color: aqua;
+            transition: all 2s;
+        }
+        div.box1:hover {
+            
+            transform: translate(0px,200px);
+                               /* 左右，上下 */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            /* box的左上角在最中间，所以以自己为中心，往上左移动自己的50% */
+            
+            
+        }   
+        div.box2 {
+            background-color: yellow;
+            width: 15%;
+            height: 15%;
+            transition: 3s;
+        }
+        div.box2:hover {
+            
+            position:relative;
+            z-index: 10;
+            top: 50%;
+            left: 50%;
+            /* transform: rotate(-90deg); */
+            transform: scale(2,3);
+            /* 长度与宽度增加倍率 */
+            
+        }
+
+
+    </style>
+
+
+</head>
+<body>
+    <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit dolores rerum natus similique? Velit obcaecati totam, quae quibusdam et quaerat error reprehenderit perferendis, dolores sint tempora ipsa repellat laudantium eaque.</h1>
+
+    <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum, dignissimos.</h2>
+
+
+
+    <div class="container">
+        <div class="box1"> </div>
+        <div class="box2"></div>
+    </div>
+
+
+
+
+</body>
+</html>

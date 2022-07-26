@@ -1,0 +1,63 @@
+    h1 {
+        background-color: aquamarine;
+        color: black;
+        margin: 1rem 2rem;
+    }
+
+    button.example {
+        /* content, padding,margin,border, width, height */
+
+        /* padding content到最外框的范围*/
+        padding-top: 1rem;
+        padding-left: 0px;
+        padding-right: 3rem;
+        padding-bottom: 5rem;
+
+        /* padding: 2px 4px; */
+        /* 上下为2，左右为4 */
+
+        /* padding: 30px; */
+        /* 上下左右都是30px */
+    }
+
+    /* Margin 的设定与padding基本相同 */
+    h1 {
+        padding: 1rem;
+        background-color: aquamarine;
+
+        margin: 10rem;
+    }
+
+
+    h2 {
+
+        border:  4mm ridge rgba(211, 220, 50, .6);
+        text-align: center;
+        padding: 1rem;
+    }
+
+
+    h3 {
+        background-color: black;
+        color: wheat;
+        width: 100px;
+        height: 500px;
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

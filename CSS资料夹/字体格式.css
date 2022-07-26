@@ -1,0 +1,32 @@
+
+
+
+
+
+
+p {
+    /* 网页预设值 font-size: 16px; 
+    px的意思是像素
+    */
+    font-size: 20px;
+}
+
+h6 {
+    /* font-size: 2rem; */
+    /* 网页预设值的2倍大 */
+    font-size: 1.2rem;
+}
+
+h1 {
+    text-align: center;
+    /* 居中 */
+    /* 系统预设为靠左 */
+}
+
+h2 {
+    text-decoration: line-through;
+    text-decoration: underline;
+    /* 只能有一个 */
+    text-decoration: none;
+}
+

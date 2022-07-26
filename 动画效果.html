@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>简单动画</title>
+    
+
+
+
+    <style> 
+        div.container {
+            background-color: black;
+            width: 1200px;
+            height: 900px;
+            position: absolute;
+
+
+        }
+    
+        div.box1 {
+
+            background-color: aquamarine;
+            width: 150px;
+            height: 200px;
+            top: 0px;
+            left: 0px;
+
+            /* 设置动画名称 */
+            animation-name: cross;
+            animation-duration: 3s;
+
+            /* 设置位置移动 */
+            position: relative;
+            /* 延迟几秒后再进行 */
+            animation-delay: 1s;
+            /* 动画重复速度 */
+            animation-iteration-count: infinite;
+            /* 动画方向 alternate比较实用，会到达后再reverse回去 */
+            animation-direction: alternate;
+            /*动画时间与动画效果之间的关系*/
+            animation-timing-function: ease-in;
+            /* 动画结束后你希望的block所做的事情，比如forwards就是定格在结束点 */
+            /* animation-fill-mode: forwards; */
+        }
+    
+        div.box2 {
+            background-color: violet;
+            width: 100px;
+            height: 100px;
+            top: 0px;
+            right: 0px;
+            
+            animation-name: box2A;
+            position: absolute;
+
+        }
+
+
+
+
+
+        /* keyframes, animation-name, animation duration */
+        @keyframes cross {
+
+
+            from {
+                background-color: aqua;
+                top: 0;
+                left: 0;
+            }
+
+
+            to {
+                background-color: yellowgreen;
+                top: 700px;
+                left: 1050px;
+                transform: rotateZ(1080deg);
+            }
+        }
+
+        @keyframes box2A {
+            from {
+                background-color: violet;
+                top: 0;
+                right: 0;
+            }
+
+
+            to {
+                background-color: springgreen;
+                top: 700px;
+                right: 1050px;
+                transform: rotateZ(1080deg);
+            }   
+
+
+
+
+
+        
+
+        
+
+
+
+
+
+    
+    </style>
+
+
+
+
+</head>
+<body>
+    
+    <div class="container">
+
+        <div class="box1">box1</div>
+
+
+
+        <div class="box2">box2</div>
+
+
+
+
+    </div>
+
+
+
+
+
+
+</body>
+</html>

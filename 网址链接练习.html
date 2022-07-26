@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>网址链接练习</title>
+
+    <style>
+      /* a类标签 */
+      div.link1 a {
+        color: red;
+      }
+
+      div.link2 a {
+        color: black;
+      }
+
+      div.link3 a{
+        color: blue;
+      }
+
+
+      .redText {
+        color: red;
+      }
+
+      .dark {
+        color: black;
+      }
+
+      .blueText {
+        color: blue;
+      }
+
+      .border:hover {
+        background-color: violet;
+
+      }
+
+      a.border {
+        display: block;
+        /* 把inline element换成block element */
+        width: 30vw;
+        height: 30vh;
+      }
+
+
+    </style>
+
+    <!-- <link rel="stylesheet" href="./CSS资料夹/Descendant.css"> -->
+
+
+  </head>
+  <body>
+    <a href="https://www.youtube.com">Youtube</a>
+    <a href="https://www.google.com.hk/?client=safari">谷歌中国</a>
+    <br />
+    <a href="https://palisadeutc.com">Palisade</a>
+    <br />
+    <a href="https://fanyi.youdao.com">有道翻译</a>
+    <a href="https://www.zhihu.com">知乎</a>
+    <br />
+
+    <p style="color: darkblue">difference with div</p>
+
+    <div class="link1"    >
+      <a href="https://www.youtube.com">Youtube</a>
+      <a href="https://www.google.com.hk/?client=safari">谷歌中国</a>
+    </div>
+
+    <div class="link2">
+      <a href="https://palisadeutc.com">Palisade</a>
+    </div>
+
+    <div class="link3">
+      <a href="https://fanyi.youdao.com">有道翻译</a>
+      <a href="https://www.zhihu.com">知乎</a>
+    </div>
+
+    <p>class selector</p>
+
+    <div class="link1"
+    style="background-color:rgb(212, 205, 196);"
+    >
+      <a href="https://www.youtube.com" class="redText">Youtube</a>
+      <a href="https://www.google.com.hk/?client=safari" class="redText"
+        >谷歌中国</a
+      >
+    </div>
+
+    <div class="link2">
+      <a href="https://palisadeutc.com" class="dark">Palisade</a>
+    </div>
+
+    <div class="link3">
+      <a href="https://fanyi.youdao.com" class="blueText">有道翻译</a>
+      <a href="https://www.zhihu.com" class="blueText">知乎</a>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="https://www.youtube.com">Youtube</a></li>
+        <li><a href="https://www.google.com.hk/?client=safari">something</a></li>
+        <li><a href="https://palisadeutc.com">Palisade</a></li>
+      </ul>
+    </nav>
+    <br>
+
+    <!-- 对网页链接进行美化 -->
+    <a class="border" href="https://developer.mozilla.org/en-US/docs/Web/CSS/border">HTML border </a>
+
+
+
+  </body>
+</html>

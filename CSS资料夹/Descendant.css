@@ -1,0 +1,10 @@
+
+
+h1, h2 {
+    color: red;
+}
+
+/* Descendant selector  */
+div.link1 a {
+    color: blue;
+}

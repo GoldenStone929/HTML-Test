@@ -1,0 +1,58 @@
+h1{
+    color: #5b71bd;
+}
+p{
+    color: blueviolet;
+}
+
+h5 {
+  color: rgb(27, 95, 27);
+}
+
+h6 {
+  color: rgba(100, 99, 100, 0.6);
+}
+
+/*
+hsl基础介绍
+    color: hsl(hue, saturation, lightness);
+*/
+
+
+
+/* Hover把滑鼠移动到某处上面，会改变颜色
+CSS伪类是添加到选择器的关键字，用于指定所选元素的特殊状态。例如:hover可用于当用户的指针悬停在按钮上时改变按钮的颜色
+ */
+ 
+/* textarea:hover {
+  background-color: black;
+} */
+
+/* 当鼠标点击按住的时候才会改变颜色 */
+/* textarea:active {
+  color: red;
+} */
+
+/* 鼠标点进这一格的时候会发生改变直到移开鼠标点别的地方 */
+textarea:focus {
+  color: red;
+}
+
+/* before and after */
+
+p::before {
+  content: ">>";
+  color: red;
+}
+h1::after {
+  content: "*";
+  color: red
+}
+p::first-letter {
+  size: 2rem;
+}
+
+/* selection就是”选取“这个动作 */
+::selection {
+  background-color: aqua;
+}

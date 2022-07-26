@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+
+<html lang="en" <html>
+  <head>
+    <meta charset="utf-8" />    
+    
+    <!--
+    //charact set，UTF-8是一种 字的编码，基本包含了这个世界上所有的字，只要使用，你的网页就基本不会出现乱码
+    //代表了网页编码，
+    //meta定义文件的属性
+    -->
+    
+    
+    <meta name="viewport" content="width = device-width, initial-scale=1.0" />
+                                  // fixed width          //不放大也不缩小
+    <title> 我的第一个网页 </title> //显示在左上角网页框中
+    <meta name = "robots" content = "index, follow">  //让谷歌可以更快更准确找到我的网站
+    <meta name = "description" content= "自己练习的第一个网站的内容，继续努力！"  /> //网站描述
+    //表面上无法看到，但是F12会出现网页描述
+    <meta name = "author" content="Shawn Cui the 9 God" />
+
+    <!--
+        internal styling
+    -->
+
+    <h1 id="redColor">ID selector</h1>
+    <h1>large selector</h1>
+ 
+
+    <style>
+        h1{
+            color: #5b71bd;
+        }
+        p{
+            color: blueviolet;
+        }
+
+        <!--RBG 可以有--1677万种方式建立不同的颜色>
+        h5 {
+          color: rgb(27, 95, 27);
+        }
+
+        h6 {
+          color: rgba(100, 99, 100, 0.6);
+        }
+
+        #redColor {
+         color: red;
+        }
+
+        .blueColor {
+          color: blue;
+        }
+
+        .LargeText {
+          font-size: 2rem;
+          /* 字的大小  : 2倍大 */
+        }
+
+         /* Attribute Selector */
+         input[type="text"] {
+           color: steelblue;
+         }
+        
+         /* 修改input的颜色 */
+         input[type="text"] {
+           color: red;
+         }
+
+
+          /* p::before {
+            content: ">>";
+            color: red;
+          } */
+
+          h1::after {
+            content: "*";
+            color:bisque;
+          }
+
+          p::first-letter {
+            font-size: 2rem;
+            /* 变成两倍大 */
+          }
+
+          /* selection就是”选取“这个动作 */
+          ::selection {
+            background-color: aqua;
+          }
+
+          h1 {
+          text-decoration: underline;
+          }
+
+    </style>
+
+   
+
+
+  </head>
+
+  <body>
+    <h1 style="color:green;">内容</h1>
+    <h3>明代版本:<h3></h3>
+    <h2>静夜思</h2>
+    
+    <p>床前明月光，疑是地上霜。</p>
+    <p>举头望明月，低头思故乡。</p>
+    作者评价:👍    99/100
+    
+    <h1>内容</h1>
+    <h3>宋代版本:<h3></h3>
+    <h2>静夜思</h2>
+    
+    <p>床前看月光，疑是地上霜。</p>
+    <p>抬头望山月，低头思故乡。</p>
+    作者评价:🤮    No Credit deserved, delete it 🚮
+    <br>
+
+    <label for="text">TELEPHONE</label>
+    <input type="text" id="input" name="input" class="redInput" required />
+
+    <br>
+
+  
+    <h1 class="blueColor LargeText">The greatest rapper</h1>
+    <!-- 两个class在一起的写法
+       <h1 class="blueColor" class="LargeText">The greatest rapper</h1> 这样写是错误的
+    -->
+  
+    <h1> Love. by Kendrick lamar </h1>
+    <h1.5 style="color: red;"> Love. by Kendrick lamar </h1.5>  //小数会被当成p来用
+    <p style="color: red;"> Love. by Kendrick lamar </p>
+    <h2 class="blueColor"> Love. by Kendrick lamar </h2>
+    <h3 class="blueColor"> Love. by Kendrick lamar </h3>
+    <h4 class="blueColor"> Love. by Kendrick lamar </h4>
+    <h5 class="blueColor"> Love. by Kendrick lamar </h5>
+    <h6 class="blueColor"> Love. by Kendrick lamar </h6>
+
+
+    <!--
+    h1 to h6 使得文字递减 
+    h7 不太行，会作为一个正常大小的paragraph
+    h1 - h6 是可以再css中被改变的，越重要的字放的越前面，越不重要的放在越后面
+    -->
+
+    <p>something you do not care</p>
+    
+    <h1.2> Anchor tag 实际应用 </h1.2>
+    </h4>herf = hypertext reference 超文字-->连接到的地方 按下 a 选择第一个，自动生成<h4/>
+     <a href="https://genius.com/Kendrick-lamar-love-lyrics"> Love by Kendrick lamar Lyrics </a>
+    <!--
+    <h3>如果我们不想Anchor tag覆盖我们自己的网页，换句话说，要其生成一个新的网页，我们需要用的 "base> tag" </h3> 
+    -->
+    <a target="_blank" href="https://genius.com/Kendrick-lamar-love-lyrics"> Love Lyrics _blank </a > <br>
+    <a target="_parent" href="https://genius.com/Kendrick-lamar-love-lyrics"> Love Lyrics _parent</a > <br>
+    <a target="_top" href="https://genius.com/Kendrick-lamar-love-lyrics"> Love Lyrics _top</a > <br>
+    <a target="_self" href="https://genius.com/Kendrick-lamar-love-lyrics"> Love Lyrics _self</a > <br>
+    
+
+
+
+
+     
+
+
+
+
+      
+  </body>
+
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D transform</title>
+
+
+
+    <style>
+        div.container {
+            background-color: black;
+            width: 80%;
+            height: 1000px;
+            position: absolute;
+            z-index: 0;
+        }
+        
+        div.box1 {
+            text-align: center;
+            background-color: yellowgreen;
+            width: 25%;
+            height: 25%;
+            transition: all 2s;
+            position: relative;
+            top: 200px;
+            left: 200px;
+            z-index: 10;
+
+        }  
+
+        div.box2 {
+            text-align: center;
+            background-color: cornflowerblue;
+            width: 15%;
+            height: 15%;
+            transition: all 2s;
+            position: relative;
+            bottom: 200px;
+            right: 0px;
+            z-index: 5;
+        
+        }
+
+        div.box1:hover {
+            transform: rotateX(90deg);
+        }
+
+        div.box2:hover {
+            transform: rotateY(66deg);
+        }
+
+
+        div.box3 {
+            text-align: center;
+            background-color: rgb(63, 197, 141);
+            width: 20%;
+            height: 20%;
+            transition: all 2s;
+            position: relative;
+            top: 200px;
+            left: 300px;
+            z-index: 5;
+        }
+
+        div.box3:hover {
+            transform: rotateZ(360deg);
+        }
+
+
+
+    </style>
+
+
+
+</head>
+<body>
+    <div class="container">
+        <div class="box1">box1</div>
+        <div class="box2">box2</div>
+        <div class="box3">box3</div>
+    </div>
+
+
+
+
+
+
+
+</body>
+</html>
