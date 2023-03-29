@@ -1,72 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cool HTML Template</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: Arial, sans-serif;
-        }
-        header {
-            background-color: #333;
-            padding: 1rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        header a {
-            color: white;
-            text-decoration: none;
-            padding: 0.5rem;
-        }
-        header a:hover {
-            background-color: #555;
-            border-radius: 5px;
-        }
-        .hero {
-            background-color: #f1f1f1;
-            padding: 2rem;
-            text-align: center;
-        }
-        .hero h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-        }
-        .hero p {
-            font-size: 1.25rem;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        footer {
-            background-color: #333;
-            padding: 1rem;
-            text-align: center;
-            color: white;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Complete Modern Template</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+
+  header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #444;
+    padding: 1rem 0;
+  }
+
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+  }
+
+  nav a:hover {
+    background-color: #555;
+  }
+
+  .hero {
+    background-image: url('your-hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+  }
+
+  .hero h1 {
+    font-size: 5rem;
+  }
+
+  section {
+    padding: 2rem;
+  }
+
+  .services,
+  .portfolio,
+  .testimonials {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+  }
+
+  .services h3,
+  .portfolio h3,
+  .testimonials h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .contact-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .contact-form label,
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .contact-form input[type="submit"] {
+    width: auto;
+    background-color: #333;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+  }
+
+  .contact-form input[type="submit"]:hover {
+    background-color: #444;
+  }
+
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+</style>
 </head>
 <body>
-    <header>
-        <a href="#">Logo</a>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Contact</a>
-        </nav>
-    </header>
-    <section class="hero">
-        <h1>Welcome to Cool HTML Template</h1>
-        <p>This is a simple yet modern template for your website. Customize it by adding your own content, styles, and additional sections.</p>
-    </section>
-    <footer>
-        &copy; 2023 Cool HTML Template. All rights reserved.
-    </footer>
+
+<header>
+  <h1>Complete Modern Template</h1>
+</header>
+
+<nav>
+  <a href="#">Home</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Portfolio</a>
+  <a href="#">Contact</a>
+</nav>
+
+<div class="hero">
+  <h1>Welcome to Our Website</h1>
+</div>
+
+<section>
+  <h2>About</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, illum?</p>
+</section>
+
+<section>
+  <h2>Services</h2>
+  <div class="services">
+    <div>
+      <h3>Web Design</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur
+      adipisicing elit. Exercitationem, illum?</p>
+    </div>
+    <div>
+      <h3>Web Development</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, illum?</p>
+    </div>
+    <div>
+      <h3>Branding</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, illum?</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Portfolio</h2>
+  <div class="portfolio">
+    <div>
+      <h3>Project 1</h3>
+      <img src="your-project-image-1.jpg" alt="Project 1">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, illum?</p>
+    </div>
+    <div>
+      <h3>Project 2</h3>
+      <img src="your-project-image-2.jpg" alt="Project 2">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, illum?</p>
+    </div>
+    <div>
+      <h3>Project 3</h3>
+      <img src="your-project-image-3.jpg" alt="Project 3">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, illum?</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Testimonials</h2>
+  <div class="testimonials">
+    <div>
+      <h3>John Doe</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, illum?</p>
+    </div>
+    <div>
+      <h3>Jane Doe</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, illum?</p>
+    </div>
+    <div>
+      <h3>Jim Doe</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, illum?</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Contact</h2>
+  <form class="contact-form">
+    <div>
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name">
+    </div>
+    <div>
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email">
+    </div>
+    <div>
+      <label for="message">Message</label>
+      <textarea id="message" name="message"></textarea>
+    </div>
+    <div>
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+</section>
+
+<footer>
+  &copy; 2023 Complete Modern Template. All rights reserved.
+</footer>
+
 </body>
 </html>
